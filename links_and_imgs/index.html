@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links and imgs</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+    <!-- href means hypertext reference. target and href both are attributes with a value attached. target _blank opens the link in a new page while href tells it where to go -->
+    <a target="_blank" href="https://www.theodinproject.com/about">Click me</a>
+    <!-- this anchor tag includes a rel. it describes the relationship of this page and the linked document. noopener value prevents the opened link from gaining access to the page that opened it, noreferrer prevents the opened link from knowing which webpage sent it. -->
+    <a href="https://www.google.com/" rel="noopener noreferrer">Also click me</a>
+    <!-- noopener prevents phishing attacks, from linked pages altering the webpage that sent it. noreferrer just doesnt let them know who sent you -->
+    <!-- these are both absolute and must contain protocol://domain/path
+    the following is relative -->
+    <a href="./pages/about.html">about</a>
+    <!-- absolute image NOTE: height and width attributes-->
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="odin logo" height="300" width="300">
+    <!-- relative image  NOTE: they both have alt text for visually impaired users-->
+    <img src="./imgs/dog.jpg" alt="a cute little dog" height="300" width="300">
+</body>
+</html>
